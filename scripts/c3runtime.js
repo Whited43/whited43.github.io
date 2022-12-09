@@ -4348,6 +4348,12 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.PickByEvaluate,
 		C3.Plugins.Sprite.Acts.LoadFromJsonString,
 		C3.Plugins.Sprite.Acts.SetAnim,
+		C3.Plugins.Sprite.Acts.SetInstanceVar,
+		C3.Plugins.Browser.Acts.ConsoleLog,
+		C3.Plugins.Arr.Cnds.CompareXYZ,
+		C3.Plugins.Sprite.Cnds.PickChildren,
+		C3.Plugins.Sprite.Acts.Destroy,
+		C3.Plugins.Sprite.Exps.UID,
 		C3.Plugins.System.Exps.find,
 		C3.Plugins.Sprite.Exps.AnimationName,
 		C3.Plugins.Sprite.Cnds.CompareFrame,
@@ -4368,9 +4374,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Cnds.IsBoolInstanceVarSet,
 		C3.Plugins.Sprite.Cnds.IsAnimPlaying,
 		C3.Plugins.gamepad.Cnds.IsButtonDown,
+		C3.Plugins.System.Cnds.Else,
 		C3.Plugins.gamepad.Cnds.CompareAxis,
 		C3.Plugins.Sprite.Acts.SetBoolInstanceVar,
-		C3.Plugins.Sprite.Acts.SetInstanceVar,
 		C3.Behaviors.EightDir.Exps.VectorY,
 		C3.Plugins.System.Cnds.TriggerOnce,
 		C3.Behaviors.Physics.Acts.SetVelocity,
@@ -4378,7 +4384,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Exps.X,
 		C3.Plugins.Sprite.Exps.Y,
 		C3.Plugins.Sprite.Acts.SetPosToObject,
-		C3.Plugins.Sprite.Exps.UID,
 		C3.Behaviors.Tween.Cnds.IsPlaying,
 		C3.Behaviors.Tween.Acts.TweenTwoProperties,
 		C3.Plugins.Sprite.Exps.Height,
@@ -4390,11 +4395,10 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.EightDir.Acts.SetMaxSpeed,
 		C3.Behaviors.EightDir.Exps.MaxSpeed,
 		C3.Plugins.Sprite.Cnds.OnCollision,
-		C3.Plugins.Sprite.Acts.Destroy,
 		C3.Plugins.Sprite.Cnds.CompareInstanceVar,
 		C3.Behaviors.Bullet.Acts.SetAcceleration,
 		C3.Behaviors.Bullet.Acts.SetSpeed,
-		C3.Plugins.Sprite.Exps.Count,
+		C3.Plugins.System.Cnds.PickAll,
 		C3.Behaviors.EightDir.Acts.SetVectorX,
 		C3.Behaviors.EightDir.Acts.SetVectorY,
 		C3.Plugins.Sprite.Acts.MoveToBottom,
@@ -4406,7 +4410,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Physics.Exps.VelocityX,
 		C3.Behaviors.Physics.Exps.VelocityY,
 		C3.Plugins.Sprite.Cnds.OnAnimFinished,
-		C3.Plugins.Browser.Acts.ConsoleLog,
 		C3.Plugins.Sprite.Cnds.OnAnyAnimFinished,
 		C3.Plugins.System.Cnds.CompareBoolVar,
 		C3.Plugins.Arr.Acts.SetXYZ,
@@ -4414,7 +4417,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.EveryTick,
 		C3.Plugins.Spritefont2.Acts.SetText,
 		C3.Plugins.System.Exps.fps,
-		C3.Plugins.Sprite.Cnds.PickChildren,
+		C3.Plugins.Sprite.Cnds.IsOnScreen,
+		C3.Plugins.System.Acts.SortZOrderByInstVar,
 		C3.Plugins.Sprite.Acts.ZMoveToObject,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.Arr.Acts.SetSize,
@@ -4422,39 +4426,54 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Physics.Acts.SetPreventRotate,
 		C3.Plugins.System.Cnds.Repeat,
 		C3.Plugins.System.Exps.loopindex,
-		C3.Plugins.Sprite.Exps.BBoxTop,
-		C3.Plugins.Sprite.Acts.AddChild,
 		C3.Plugins.Sprite.Acts.SetEffect,
+		C3.Plugins.Sprite.Acts.AddChild,
 		C3.Plugins.Sprite.Acts.SetOpacity,
 		C3.Plugins.Sprite.Acts.SetEffectEnabled,
+		C3.Plugins.Sprite.Exps.Count,
 		C3.Plugins.System.Acts.CreateObject,
-		C3.Plugins.System.Cnds.Else,
+		C3.Plugins.Sprite.Exps.BBoxTop,
+		C3.Behaviors.Timer.Acts.StartTimer,
+		C3.Plugins.Sprite.Acts.SetDefaultColor,
 		C3.Plugins.Spritefont2.Acts.SetWidth,
 		C3.Behaviors.Tween.Acts.TweenOneProperty,
 		C3.Plugins.Sprite.Acts.SetAnimSpeed,
 		C3.Plugins.Sprite.Acts.StartAnim,
 		C3.Behaviors.Timer.Cnds.OnTimer,
 		C3.Behaviors.Sin.Acts.SetEnabled,
-		C3.Plugins.Sprite.Cnds.IsOnScreen,
 		C3.Behaviors.Timer.Cnds.IsTimerRunning,
 		C3.Plugins.System.Cnds.For,
 		C3.Behaviors.Bullet.Acts.SetAngleOfMotion,
-		C3.Behaviors.Timer.Acts.StartTimer,
 		C3.Plugins.Sprite.Acts.StopAnim,
-		C3.Plugins.System.Cnds.PickAll,
-		C3.Plugins.System.Cnds.LayerCmpOpacity,
+		C3.Plugins.System.Acts.SetLayerOpacity,
+		C3.Plugins.Sprite.Exps.BBoxLeft,
+		C3.Plugins.Sprite.Exps.BBoxRight,
 		C3.Plugins.Sprite.Exps.BBoxBottom,
-		C3.Plugins.Sprite.Cnds.IsOverlapping,
 		C3.Behaviors.Pathfinding.Acts.FindPath,
 		C3.Behaviors.Pathfinding.Cnds.OnPathFound,
 		C3.Behaviors.Pathfinding.Acts.StartMoving,
 		C3.Behaviors.Pathfinding.Cnds.OnArrived,
 		C3.Plugins.Sprite.Cnds.OnFrameChanged,
-		C3.Plugins.System.Acts.SetLayerOpacity,
 		C3.Plugins.System.Exps.layeropacity,
 		C3.Plugins.Sprite.Acts.SetY,
+		C3.Plugins.System.Exps.rgbex,
 		C3.Plugins.Sprite.Cnds.PickByUID,
-		C3.Plugins.Sprite.Acts.SetAngle
+		C3.Plugins.Sprite.Acts.SetAngle,
+		C3.Behaviors.Bullet.Acts.SetEnabled,
+		C3.Plugins.System.Exps.mid,
+		C3.Plugins.Sprite.Cnds.HasParent,
+		C3.Plugins.Sprite.Cnds.PickParent,
+		C3.Behaviors.Tween.Exps.Value,
+		C3.Behaviors.Tween.Exps.Progress,
+		C3.Behaviors.Tween.Cnds.OnTweensFinished,
+		C3.Behaviors.Tween.Acts.TweenValue,
+		C3.Plugins.Sprite.Cnds.IsOverlapping,
+		C3.Behaviors.Timer.Acts.StopTimer,
+		C3.Behaviors.solid.Acts.SetEnabled,
+		C3.Plugins.Sprite.Cnds.HasChildren,
+		C3.Plugins.Sprite.Acts.SetVisible,
+		C3.Plugins.Sprite.Cnds.IsVisible,
+		C3.Plugins.Sprite.Exps.PickedCount
 	];
 };
 self.C3_JsPropNameTable = [
@@ -4467,6 +4486,7 @@ self.C3_JsPropNameTable = [
 	{Browser: 0},
 	{Fade: 0},
 	{player_damage: 0},
+	{order: 0},
 	{isMove: 0},
 	{isAttack: 0},
 	{curr_combo: 0},
@@ -4487,6 +4507,7 @@ self.C3_JsPropNameTable = [
 	{MaxDec: 0},
 	{velocity: 0},
 	{sphere: 0},
+	{AttackCount: 0},
 	{Timer: 0},
 	{base_player: 0},
 	{ScrollTo: 0},
@@ -4523,6 +4544,8 @@ self.C3_JsPropNameTable = [
 	{id: 0},
 	{type: 0},
 	{isBoss: 0},
+	{active: 0},
+	{dir: 0},
 	{spr_boss_room: 0},
 	{spr_light: 0},
 	{spr_enemy1: 0},
@@ -4532,10 +4555,25 @@ self.C3_JsPropNameTable = [
 	{Sprite7: 0},
 	{Tween: 0},
 	{state: 0},
+	{dist: 0},
+	{duga: 0},
+	{ID: 0},
 	{spr_sword: 0},
 	{spr_target: 0},
 	{Phantom_2: 0},
+	{Sprite4: 0},
+	{Sprite8: 0},
+	{EnemyCount: 0},
+	{Waves: 0},
+	{spr_spawn_field: 0},
+	{spwn_enemy: 0},
+	{prevTarget: 0},
+	{enemy1: 0},
+	{spr_door_draw: 0},
+	{spr_door_draw2: 0},
+	{turniket: 0},
 	{Fantoms: 0},
+	{Zorder: 0},
 	{curr_tick: 0},
 	{write: 0},
 	{startX: 0},
@@ -4549,7 +4587,11 @@ self.C3_JsPropNameTable = [
 	{DEADZONE_GAMEPAD: 0},
 	{TIME_: 0},
 	{boss_id: 0},
-	{picked_enemy_UID: 0}
+	{picked_enemy_UID: 0},
+	{Controls: 0},
+	{Action: 0},
+	{Spawn: 0},
+	{CurrFieldID: 0}
 ];
 }
 
@@ -4679,6 +4721,22 @@ self.C3_ExpressionFuncs = [
 			return () => n0.ExpObject(v1.GetValue(), 1, n2.ExpInstVar());
 		},
 		p => {
+			const n0 = p._GetNode(0);
+			const v1 = p._GetNode(1).GetVar();
+			const n2 = p._GetNode(2);
+			return () => n0.ExpObject(v1.GetValue(), 3, n2.ExpInstVar());
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpInstVar();
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			const n1 = p._GetNode(1);
+			return () => ((n0.ExpInstVar()) === (n1.ExpObject()) ? 1 : 0);
+		},
+		() => "",
+		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			const n1 = p._GetNode(1);
 			return () => f0(n1.ExpObject(), "attack");
@@ -4711,6 +4769,11 @@ self.C3_ExpressionFuncs = [
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => ("sword_" + v0.GetValue());
+		},
+		() => "YES",
+		p => {
+			const n0 = p._GetNode(0);
+			return () => (n0.ExpInstVar() + 1);
 		},
 		p => {
 			const v0 = p._GetNode(0).GetVar();
@@ -4765,10 +4828,6 @@ self.C3_ExpressionFuncs = [
 		},
 		p => {
 			const n0 = p._GetNode(0);
-			return () => n0.ExpInstVar();
-		},
-		p => {
-			const n0 = p._GetNode(0);
 			const v1 = p._GetNode(1).GetVar();
 			const v2 = p._GetNode(2).GetVar();
 			return () => ((((n0.ExpInstVar()) === (0) ? 1 : 0)) ? (("dash_" + v1.GetValue())) : ((("dash_" + v2.GetValue()) + "_sword")));
@@ -4777,10 +4836,13 @@ self.C3_ExpressionFuncs = [
 			const n0 = p._GetNode(0);
 			return () => (n0.ExpBehavior() * 3);
 		},
+		() => "duga",
+		() => "start",
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => ("idle_" + v0.GetValue());
 		},
+		() => "sword's parent is a Player",
 		p => {
 			const n0 = p._GetNode(0);
 			const n1 = p._GetNode(1);
@@ -4790,6 +4852,7 @@ self.C3_ExpressionFuncs = [
 		() => "back",
 		() => 500,
 		() => 700,
+		() => 20,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => (("sword" + "_") + v0.GetValue());
@@ -4863,10 +4926,6 @@ self.C3_ExpressionFuncs = [
 			const n1 = p._GetNode(1);
 			return () => ((((n0.ExpInstVar()) === (3) ? 1 : 0)) ? (1) : ((n1.ExpInstVar() + 1)));
 		},
-		p => {
-			const n0 = p._GetNode(0);
-			return () => (n0.ExpInstVar() + 1);
-		},
 		() => "БРЕЕЙК",
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
@@ -4910,12 +4969,7 @@ self.C3_ExpressionFuncs = [
 			const n3 = p._GetNode(3);
 			return () => C3.clamp((5 - (C3.distanceTo(n0.ExpObject(), n1.ExpObject(), n2.ExpObject(), n3.ExpObject()) * 0.005)), 0, 1);
 		},
-		() => "",
 		() => "FantomLayer",
-		p => {
-			const n0 = p._GetNode(0);
-			return () => (n0.ExpObject() - 12);
-		},
 		() => 50,
 		() => "Outline",
 		() => "boss",
@@ -4935,10 +4989,25 @@ self.C3_ExpressionFuncs = [
 		},
 		p => {
 			const n0 = p._GetNode(0);
+			const n1 = p._GetNode(1);
+			return () => ((n0.ExpObject()) === (n1.ExpInstVar()) ? 1 : 0);
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => (n0.ExpInstVar() - 1);
+		},
+		p => {
+			const n0 = p._GetNode(0);
 			return () => C3.clamp((n0.ExpInstVar() - 2), 0, 2500);
 		},
-		() => "Animation 4",
 		() => "ice",
+		() => "freeze",
+		() => -1049599,
+		() => "poison",
+		() => 0.5,
+		() => "poisonDamage",
+		() => -17179870207,
+		() => "Animation 4",
 		p => {
 			const n0 = p._GetNode(0);
 			return () => C3.clamp((n0.ExpInstVar() - 25), 0, 2500);
@@ -4952,6 +5021,11 @@ self.C3_ExpressionFuncs = [
 			return () => (n0.ExpObject() - 16);
 		},
 		() => 200,
+		() => "end",
+		p => {
+			const n0 = p._GetNode(0);
+			return () => (n0.ExpObject() - 256);
+		},
 		() => 18,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
@@ -4969,13 +5043,10 @@ self.C3_ExpressionFuncs = [
 		() => "hit",
 		p => {
 			const n0 = p._GetNode(0);
-			const n1 = p._GetNode(1);
-			return () => ((((n0.ExpInstVar()) > (0) ? 1 : 0)) ? ((n1.ExpInstVar() - 1)) : (0));
-		},
-		p => {
-			const n0 = p._GetNode(0);
 			return () => (4 - n0.ExpInstVar());
 		},
+		() => "FADE",
+		() => 100,
 		() => "in",
 		p => {
 			const n0 = p._GetNode(0);
@@ -4986,22 +5057,34 @@ self.C3_ExpressionFuncs = [
 			const n0 = p._GetNode(0);
 			return () => ((n0.ExpInstVar()) === ("out") ? 1 : 0);
 		},
+		p => {
+			const n0 = p._GetNode(0);
+			const n1 = p._GetNode(1);
+			const n2 = p._GetNode(2);
+			const n3 = p._GetNode(3);
+			const n4 = p._GetNode(4);
+			return () => ((((n0.ExpInstVar()) === ("right") ? 1 : 0)) ? ((n1.ExpObject() - 16)) : (((((n2.ExpInstVar()) === ("left") ? 1 : 0)) ? ((n3.ExpObject() + 16)) : (n4.ExpObject()))));
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			const n1 = p._GetNode(1);
+			const n2 = p._GetNode(2);
+			const n3 = p._GetNode(3);
+			const n4 = p._GetNode(4);
+			return () => ((((n0.ExpInstVar()) === ("up") ? 1 : 0)) ? ((n1.ExpObject() - 16)) : (((((n2.ExpInstVar()) === ("down") ? 1 : 0)) ? ((n3.ExpObject() + 16)) : (n4.ExpObject()))));
+		},
 		() => "out",
-		() => "FADE",
 		p => {
 			const n0 = p._GetNode(0);
 			return () => ((n0.ExpInstVar()) === ("in") ? 1 : 0);
 		},
 		p => {
 			const n0 = p._GetNode(0);
-			return () => (n0.ExpObject() + 16);
+			const n1 = p._GetNode(1);
+			const n2 = p._GetNode(2);
+			return () => and((and(and(n0.ExpInstVar(), ":"), n1.ExpObject()) + ":"), n2.ExpObject());
 		},
 		() => "base_fantom",
-		p => {
-			const n0 = p._GetNode(0);
-			const n1 = p._GetNode(1);
-			return () => ((n0.ExpObject()) === (n1.ExpInstVar()) ? 1 : 0);
-		},
 		p => {
 			const n0 = p._GetNode(0);
 			const n1 = p._GetNode(1);
@@ -5037,7 +5120,6 @@ self.C3_ExpressionFuncs = [
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => f0("FADE");
 		},
-		() => 100,
 		p => {
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => C3.clamp((f0("FADE") - 1), 0, 100);
@@ -5053,6 +5135,16 @@ self.C3_ExpressionFuncs = [
 		() => 0.7,
 		() => "wait_sword",
 		p => {
+			const n0 = p._GetNode(0);
+			const f1 = p._GetNode(1).GetBoundMethod();
+			const n2 = p._GetNode(2);
+			const f3 = p._GetNode(3).GetBoundMethod();
+			const n4 = p._GetNode(4);
+			const f5 = p._GetNode(5).GetBoundMethod();
+			const f6 = p._GetNode(6).GetBoundMethod();
+			return () => ((((n0.ExpInstVar()) === ("ice") ? 1 : 0)) ? (f1(0, 0, 100)) : (((((n2.ExpInstVar()) === ("fire") ? 1 : 0)) ? (f3(100, 0, 0)) : (((((n4.ExpInstVar()) === ("ice") ? 1 : 0)) ? (f5(0, 100, 0)) : (f6(100, 100, 100)))))));
+		},
+		p => {
 			const v0 = p._GetNode(0).GetVar();
 			const n1 = p._GetNode(1);
 			const v2 = p._GetNode(2).GetVar();
@@ -5066,11 +5158,76 @@ self.C3_ExpressionFuncs = [
 			const v2 = p._GetNode(2).GetVar();
 			return () => ((((v0.GetValue()) === ("left") ? 1 : 0)) ? (180) : (((((v1.GetValue()) === ("right") ? 1 : 0)) ? (0) : (((((v2.GetValue()) === ("up") ? 1 : 0)) ? (270) : (90))))));
 		},
-		() => "SWORD!",
+		p => {
+			const n0 = p._GetNode(0);
+			const n1 = p._GetNode(1);
+			return () => (n0.ExpObject() + C3.clamp((n1.ExpInstVar() * 5), 10, 150));
+		},
+		() => 0.2,
+		() => "sword_left",
+		() => "sword_right",
+		() => "sword_up",
+		() => "sword_down",
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			const n1 = p._GetNode(1);
+			const n2 = p._GetNode(2);
+			const f3 = p._GetNode(3).GetBoundMethod();
+			const n4 = p._GetNode(4);
+			const n5 = p._GetNode(5);
+			const f6 = p._GetNode(6).GetBoundMethod();
+			const n7 = p._GetNode(7);
+			return () => ((((f0(n1.ExpObject(), 6, 10)) === ("left") ? 1 : 0)) ? ((180 - C3.clamp(n2.ExpInstVar(), (-45), 45))) : (((((f3(n4.ExpObject(), 6, 10)) === ("right") ? 1 : 0)) ? ((0 + C3.clamp(n5.ExpInstVar(), (-45), 45))) : (((((f6(n7.ExpObject(), 6, 10)) === ("up") ? 1 : 0)) ? (270) : (90))))));
+		},
+		p => {
+			const f0 = p._GetNode(0).GetBoundMethod();
+			const n1 = p._GetNode(1);
+			const f2 = p._GetNode(2).GetBoundMethod();
+			const n3 = p._GetNode(3);
+			const f4 = p._GetNode(4).GetBoundMethod();
+			const n5 = p._GetNode(5);
+			return () => ((((f0(n1.ExpObject(), 6, 10)) === ("left") ? 1 : 0)) ? (180) : (((((f2(n3.ExpObject(), 6, 10)) === ("right") ? 1 : 0)) ? (0) : (((((f4(n5.ExpObject(), 6, 10)) === ("up") ? 1 : 0)) ? (270) : (90))))));
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			const n1 = p._GetNode(1);
+			const n2 = p._GetNode(2);
+			const n3 = p._GetNode(3);
+			return () => C3.distanceTo(n0.ExpObject(), n1.ExpObject(), n2.ExpObject(), n3.ExpObject());
+		},
+		() => 384,
 		p => {
 			const v0 = p._GetNode(0).GetVar();
 			return () => (("idle_" + v0.GetValue()) + "_sword");
-		}
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			const n1 = p._GetNode(1);
+			const n2 = p._GetNode(2);
+			return () => (n0.ExpObject() + (Math.cos(C3.toRadians(n1.ExpBehavior("duga"))) * C3.clamp((n2.ExpInstVar() * 10), 10, 150)));
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			const n1 = p._GetNode(1);
+			const n2 = p._GetNode(2);
+			return () => (n0.ExpObject() + (Math.sin(C3.toRadians(n1.ExpBehavior("duga"))) * C3.clamp(((n2.ExpInstVar() / 3) * 10), 15, 50)));
+		},
+		p => {
+			const n0 = p._GetNode(0);
+			return () => n0.ExpBehavior("duga");
+		},
+		() => 0.9,
+		() => -281492157629439,
+		() => "coll",
+		() => "close",
+		() => "play",
+		p => {
+			const n0 = p._GetNode(0);
+			return () => C3.clamp((n0.ExpInstVar() - 1), 0, 2500);
+		},
+		() => "-1",
+		() => "open",
+		() => "hmm"
 ];
 
 
